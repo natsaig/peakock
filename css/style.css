@@ -1,0 +1,803 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: white;
+}
+
+@font-face {
+  font-family: panchangBold;
+  src: url(../css/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf)
+}
+@font-face {
+  font-family: panchangRegular;
+  src: url(../css/Panchang_Complete/Fonts/OTF/Panchang-Regular.otf)
+}
+
+img{
+  width: 50;
+}
+/* this is my header section styles  */
+.header{
+  width: 100%;
+}
+header .header-inner{
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+  header .header-inner .join-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .header-inner .join-text span{
+  background: #000;
+  z-index: 1;
+  font-size: 10px;
+  font-family: panchangBold;
+  }
+  header .header-inner .join-text img{
+    width: 50%;
+    margin-left: -7%;
+    z-index: 0;
+  }
+/* my header section styles end here  */
+/*  this is my hero section styles  */
+.hero{
+  padding-top: 5%;
+  padding-bottom: 15%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  gap: 10%;
+  font-family: panchangRegular;
+  font-size: x-large;
+  display: grid;
+  color: aliceblue;
+}
+#hero span{
+  color: #000;background-image: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: cover;
+  gap: 30%;
+  font-size: 80%;
+  font-weight: 900;
+}
+.hero.hero-inner div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  gap: 100%;
+  background-color: #000;
+  font-size: large;
+}
+.hero.hero h1{
+  font-size: 50%;
+}
+.hero .hero-inner h2{
+  font-size:10% ;
+  padding-top: 20%;
+}
+.hero .hero-inner h4{
+font-size: 40%;
+font-weight: 900;
+display: flex;
+justify-content: center;
+}
+/* this is my moving line styles  */
+.moving-line{
+  margin:0 auto;
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(to bottom, rgb(212,255, 0), black);
+  /* colortransitionfromwhitetoblack  */transform: translate(-50, -50%);
+  animation: moveUpDown 2s infinite ease-in-out;
+  cursor: pointer;
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform:translate(-50%, -50%);
+}
+/* moving the line up and down  */
+@keyframes moveUpDown{
+  0%, 100%{
+    transform: translate(-50%,-50%);
+  }
+  50%{
+    transform: translate(-50%,-45%);
+  }
+}
+
+/* my hero section styles ends here  */
+/* this is my about section styles  */
+.about{
+  color: white;
+}
+.about .about-inner{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  padding: 10%;
+  gap: 0%;
+  font-family: panchangBold;
+}
+.about .h2 span{
+  color: black;
+  font-size: 25%;
+  font-weight: 900;
+  background-image: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: cover;
+  width: 10%;
+}
+.about h2{
+  font-size: 30px;
+  font-weight: 900;
+}
+.about .about-inner p{
+font-size: 80%;
+}
+.about .about-inner h4{
+font-size: 25%;
+font-family: panchangRegular;
+}
+#about p{
+  padding: 2%;
+  margin-top: 2%;
+}
+
+/* my about section ends here  */
+/* this is my video section styles  */
+  #video{
+    background-color: brown;
+    padding: 20%;
+  }
+/* my video section  styles end here  */
+/* this is my fifth section styles  */
+.fifth{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: white;
+padding: 5% 10% 10% 10%;
+font-size: 100%;
+font-family: panchangBold;
+}
+.fifth .fifth-inner p{
+  color:black;
+  background-color: white;
+  padding: 2% 20%;
+  font-weight: 10%;
+  font-size: medium;
+
+}
+.fifth .fifth-inner .join-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.fifth .fifth-inner .join-text button{
+  background: white;
+  background-color: white;
+  border: none;
+  z-index: 1;
+  font-size: 100%;
+  font-family: panchangBold;
+  color: black;
+  font-weight: 50%;
+}
+.fifth .fifth-inner .join-text img{
+width: 5%;
+margin-left: -3%;
+z-index: 0;
+background-color: white;
+}
+/* my fifth section styles  end here  */
+/* this is my sixth section styles  */
+.sixth{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  background-color: #000;
+  padding-top: 10%;
+}
+.sixth .sixth-inner img{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+.sixth .sixth-inner img{
+width: 100%;
+height: auto;
+}
+@media(min-width:786px){
+  #sixth{
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  #sixth .sixth-inner .img{
+    flex: 0 0 25%;
+  }
+}
+/* my sixth section styles ends here  */
+
+/* this is my seventh section styles  */
+#seventh{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+background-color: #000;
+padding: 5%;
+}
+#seventh .seventhcards{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-top:5%;
+  padding-left: 10%;
+}
+#seventh .join-text span{
+  background-image: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: panchangBold;
+  font-size: large;
+}
+
+
+
+.seventh .seventhcards .seventhcard-two{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+.seventh.seventhcards .seventhcard-three img{
+  width: 50%;
+  height: auto;
+}
+#seventh.seventhcards.seventhcard-one span{
+  background-image: url(../images/img-bg.png);
+}
+#seventh.seventhcards.seventhcard-two span{
+  background-image: url(../images/img-bg.png);
+}
+#seventh.seventhcards.seventhcard-three{
+  background-image: url(../images/img-bg.png);
+}
+
+@media(min-width:768px) {
+  .seventh .seventcards{
+    flex-wrap: wrap;
+    overflow:visible;
+  }
+  .seventh .seventhcards{
+    flex: 0 0 30%;
+  }
+  .seventh .seventhcards p{
+    font-family: panchangRegular;
+    padding-top: 5%;
+    font-family: panchangRegular;
+  }
+  .seventh .seventhcards h2{
+    padding-top: 5%;
+    font-family: panchangBold;
+    font-size: 35%;
+  }
+
+}
+/* my seventh section styles end here  */
+/* this is my eighth section styles  */
+.eighth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 5%;
+}
+.eighth .eighth-inner{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+.eighth .eighth-inner img{
+  width: 100%;
+  height: auto;
+}
+@media(min-width:768px){
+  #eighth{
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  #eighth .eighth-inner{
+    flex: 0 0 25%;
+
+  }
+}
+/* my eighth section styles end here  */
+
+/* this is my nineth section styles  */
+ #nineth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 5%;
+  background: #ffffff;
+  padding: 15%;
+  margin-top: 15%;
+}
+#nineth p{
+  text-align: center;
+  color: red;
+  background-color: #ffffff;
+  font-weight: 200;
+  font-family: panchangRegular;
+  font-size: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#nineth .nineth-inner{
+  background-color: white;
+  padding: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#nineth span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: panchangBold;
+  background-image: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: cover;
+  font-size: 35%;
+  width: 10;
+  padding: 5%;
+  background-color: #ffffff;
+}
+#nineth .nineth-inner .InputEmail{
+  padding: 20% 45% 40% 0%;
+  background-color: grey;
+  border: none;
+  display:flex flex;
+  align-items: center;
+  justify-content: center ;
+  text-align: center;
+  
+
+  
+}
+#nineth .nineth-inner .join-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  
+}
+#nineth .nineth-inner .join-text button{
+  background: #000;
+  background-color: white;
+  border: none;
+  z-index: 1;
+  font-size: 80%;
+  font-family: panchangBold;
+  color: black;
+  font-weight: 10%;
+  display: flex-end;
+}
+#nineth .join-text img{
+  width: 15%;
+  margin-left: -7%;
+  z-index: 0;
+  color: red;
+}
+/* my nineth section ends here  */
+/* this is my tenth section styles */
+ .tenth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 15%;
+}
+#tenth h4{
+  background-image: url(../images/img-bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-position: center center;
+  background-size: cover;
+  font-size: 25%;
+  font-family: panchangBold;
+  padding: 5%;
+  font-weight: 200%;
+  
+}
+
+.tenth .tenth-inner img{
+   align-content: center;
+
+}
+.tenth .tenth-inner .tenthcards{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-top: 10%;
+
+}
+.tenth .tenth-inner .tenthcards .tenthcard-one{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+#tenth .tenth-inner.tenthcards .tenthcard-one img{
+  width: 50%;
+  height: auto;
+
+}
+/* my tenth section styles end here  */
+/* this is my footer section styles  */
+#footer{
+  background-image: url(../images/img-bg.png);
+ height:100vh ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25%;
+ 
+  
+}
+.footer-inner{
+  background-image: url(../images/img-bg.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+    
+}
+/* my footer section styles end here  */
+
+
+
+@media(min-width:992px){
+  
+/* this is my header section  styles */
+header{
+  width: 100%;
+}
+header .header-inner{
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-inner .join-text{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header-inner .join-text span{
+  background: #000;
+  z-index: 1;
+  font-family: panchangRegular;
+  font-size: 30px;
+}
+header .header-inner .join-text img{
+ width: 15%;
+  margin-left: -7%; 
+  z-index: 0;
+}
+
+@media(min-width:1200px){
+
+ header .header-inner.join-text span{
+  font-size: 30px;
+  
+ }
+}
+/* my header section style ends here  */
+
+.h1-text{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+}
+.h1-text span{
+  color: #ffffff;
+  background: none;
+  z-index: 1;
+}
+.h1-text:before{
+  width: 150px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 45%;
+  top: 5%;
+}
+/* this is my hero section styles  */
+#hero{
+  padding-top: 5%;
+  padding-bottom: 15%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-family: panchangRegular;
+  font-size: x-large;
+  gap: 10%;
+  display: grid;
+  color: aliceblue;
+  text-align: center;
+
+}
+#hero.hero-inner  div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  gap: 100%;
+  background-color: black;
+  font-size: smaller;
+}
+#hero span{
+  width: 100px;
+  font-weight: 900;
+  font-size: 80px;
+  gap: 30%;
+  background-image: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: cover;
+  color: black;
+
+}
+#hero h4{
+  font-size: 60px;
+}
+
+#hero .hero-inner .link{
+  font-size: 60px;
+  padding-top: 50%;
+}
+#hero h1{
+  font-weight: 900;
+  font-size: 80px;
+}
+/* this is moving line styles  */
+.moving-line{
+  margin: 0 auto;
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(to bottom, rgb(212, 255, 0),black);
+  /*colortransitionfromwhitetoblack*/transform: translate(-50%, -50%);
+  animation: moveUpDown 2s infinite ease-in-out;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+
+}
+/* moving the line up and down  */
+@keyframes moveUpDown{
+  0%, 100%{
+    transform: translate(-50%, -50%);
+  }
+  50%{
+    transform: translate(-50%, -45%);
+  }
+
+}
+/* my moving line styles ends here  */
+/* this is my about section styles  */
+#about{
+  color: white;
+}
+ #about .about-inner{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  padding: 10%;
+  color: aliceblue;
+  display: grid;
+  gap: 0%;
+  font-family: panchangRegular;
+ }
+ #about .aboutinner span{
+  color: black;
+  font-size: 100px;
+  font-weight: 900;
+  background-image: url(../images/img-bg.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100px;
+ }
+ #about h2{
+  font: 100px;
+  font-weight: 900;
+ }
+ #about h4{
+  font-size: 60px;
+  font-weight: 100;
+ }
+ #about p{
+  font-size: 50px;
+  font-weight: 100;
+  padding: 2% 30% 2% 30%;
+  margin-top: 2%;
+ }
+/* this is my video section styles  */
+#video{
+  background-color: brown;
+  padding: 20%;
+  display: flex;
+  width: 100%;
+  height: 5ovh;
+}
+.video-inner{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/* my video section ends here  */
+/* this is my fifth section styles  */
+#fifth{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  padding: 5% 10% 5% 10%;
+  font-family: panchangRegular;
+  font-size: xx-large;
+}
+#fifth .fifth-inner p{
+   padding: 2% 20%;
+  font-weight: 500;
+
+}
+#fifth .fifth-inner .join-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+}
+#fifth .fifth-inner.join-text button{
+  background:black;
+  background-color: white;
+  border: none;
+  z-index: 1;
+  font-size: 40px;
+  font-family: panchangRegular;
+  color:black;
+  font-weight: bolder;
+  padding: 0% 0;
+}
+#fifth .fifth-inner.join-text img{
+  width: 5%;
+  margin-left: -7%;
+  z-index: 0;
+  background-color: white;
+  color: white;
+}
+
+/* my fifth section ends here  */
+/* this is my sixth section styles  */
+.sixth{
+  display:flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+}
+.sixth-inner{
+  flex: 0 0 100%;
+  scroll-snap-align:center ;
+}
+.sixth-inner{
+  width: 100%;
+  height: auto;
+}
+@media(min-width:786px){
+  sixth{
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+  .sixth-inner{
+    flex: 0 0 25%;
+  }
+  
+}
+/* my sixth section styles ends here  */
+/* this is my seventh section styles  */
+#seventh{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  gap: 20%;
+}
+#seventh .seventh-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10%;
+  padding: 3%;
+  display: grid;
+}
+#seventh .seventh-cards h2{
+  padding-top: 10%;
+  font-size: xx-large;
+  font-family: panchangRegular;
+}
+#seventh .seventh-cards p{
+  padding:10% 30% ;
+  font-size: x-large;
+  font-family: panchangRegular;
+}
+#seventh .seventh-inner span{
+  background-color: brown;
+}
+#seventh .join-text{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#seventh .join-text span{
+  background: none;
+  z-index: 1;
+  font-family: panchangRegular;
+  color: black;
+  font-size: 125px;
+  font-weight: 1000;
+
+}
+#seventh .join-text img{
+  width: 30%;
+  margin-left: -25%;
+  z-index: 0;
+}
+/* my seventh section styles ends here  */
+
+} 
